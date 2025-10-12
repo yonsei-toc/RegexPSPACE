@@ -75,6 +75,25 @@ def main():
         )
     model.eval()
 
+    # Setting Config for Sampling
+    model.generation_config.eos_token_id = tokenizer.eos_token_id
+    if tokenizer.pad_token_id is not None:
+        model.generation_config.pad_token_id = tokenizer.pad_token_id
+    else:
+        model.generation_config.pad_token_id = tokenizer.eos_token_id
+    print(f"The model's pad_token_id has been set to: {model.generation_config.pad_token_id}")
+    model.generation_config.do_sample = do_sample
+    if do_sample:
+        if temperature != None:
+            model.generation_config.temperature = temperature
+        if top_p != None:
+            model.generation_config.top_p = top_p
+    else:
+        if hasattr(model.generation_config, 'temperature'):
+            model.generation_config.temperature = None
+        if hasattr(model.generation_config, 'top_p'):
+            model.generation_config.top_p = None
+
     # Setting Config and Variables for Reasoning
     if reasoning:
         thinking_generation_config = deepcopy(model.generation_config)
@@ -87,14 +106,6 @@ def main():
             thinking_generation_config.eos_token_id = tokenizer.encode(think_end_token, add_special_tokens=False)[0]
         else:
             thinking_generation_config.stop_strings = think_end_token
-
-    # Setting Config for Sampling
-    model.generation_config.do_sample = do_sample
-    if do_sample:
-        if temperature != None:
-            model.generation_config.temperature = temperature
-        if top_p != None:
-            model.generation_config.top_p = top_p
 
     # Output Path
     result_path = path+model_name.split("/")[1]
