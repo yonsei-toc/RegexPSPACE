@@ -1,0 +1,7 @@
+accelerate==1.2.1
+bitsandbytes==0.47.0
+datasets==3.2.0
+FAdo==2.2.0
+scikit-learn==1.7.2
+seaborn==0.13.2
+transformers==4.55.4
