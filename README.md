@@ -159,7 +159,7 @@ For a detailed analysis of the results and failure cases, please refer to our pa
 
 ## Citation
 ```
-@misc{jin2025regexpspacebenchmarkevaluatingllm,
+@misc{JinHH2025,
       title={RegexPSPACE: A Benchmark for Evaluating LLM Reasoning on PSPACE-complete Regex Problems}, 
       author={Hyundong Jin and Joonghyuk Hahn and Yo-Sub Han},
       year={2025},
