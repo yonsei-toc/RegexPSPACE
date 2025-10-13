@@ -12,9 +12,9 @@
   </a>
 </p>
 
-<!-- <div align="center">
-    <a href="https://arxiv.org/abs/2506.00089"><b>Paper Link</b>📖</a>
-</div><br> -->
+<div align="center">
+    <a href="https://arxiv.org/abs/2510.09227"><b>Paper Link</b>📖</a>
+</div><br>
 
 ![Main Image](./figures/main.png)
 
@@ -32,6 +32,7 @@ This research presents the first empirical investigation into the spatial comput
 
 ## 📰 News
 * 📣 NEW! We have released **RegexPSPACE** on our official GitHub repository. (Oct 12, 2025)
+* 📣 NEW! We have released our **RegexPSPACE** preprint on arXiv. (Oct 13, 2025)
 
 ## ⚡ Quickstart
 Get started in minutes by following these steps. This guide will walk you through setting up the environment, running inference on the RegexMin task, and evaluating the results.
@@ -157,4 +158,14 @@ Our extensive evaluations on 6 LLMs and 5 LRMs reveal several key findings:
 For a detailed analysis of the results and failure cases, please refer to our paper.
 
 ## Citation
-Our arXiv preprint is under review; the citation will be updated accordingly.
+```
+@misc{jin2025regexpspacebenchmarkevaluatingllm,
+      title={RegexPSPACE: A Benchmark for Evaluating LLM Reasoning on PSPACE-complete Regex Problems}, 
+      author={Hyundong Jin and Joonghyuk Hahn and Yo-Sub Han},
+      year={2025},
+      eprint={2510.09227},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2510.09227}, 
+}
+```
