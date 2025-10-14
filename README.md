@@ -30,6 +30,13 @@ Through a double-exponential space exploration and a sound filtering process, we
 
 This research presents the first empirical investigation into the spatial computational limitations of LLMs and Large Reasoning Models (LRMs), offering a new framework for evaluating their advanced reasoning capabilities.
 
+## ✨ What makes RegexPSPACE valuable?
+- First PSPACE-Complete Benchmark: The first benchmark to evaluate LLMs on PSPACE-complete regex problems, targeting their spatial complexity and reasoning limits.
+
+- Quantitative Evaluation Metrics: Provides well-defined metrics beyond simple accuracy, including Minimality, Equivalence, and Length Ratio, for a nuanced analysis of model performance.
+
+- Analysis of Failure Patterns: Identifies and analyzes common failure patterns in state-of-the-art LLMs, such as verbosity, repetition, and premature termination.
+
 ## 📰 News
 * 📣 NEW! We have released **RegexPSPACE** on our official GitHub repository. (Oct 12, 2025)
 * 📣 NEW! We have released our **RegexPSPACE** preprint on arXiv. (Oct 13, 2025)
@@ -69,21 +76,6 @@ python evaluate.py \
     --task "minimization"
 ```
 You should now see the evaluation metrics, such as Minimality, Equivalence, and Length Ratio, printed to the console.
-
-## 📄 Introduction
-While Large Language Models (LLMs) have demonstrated remarkable success in domains like mathematical reasoning and programming, their computational limits, particularly concerning spatial complexity constrained by finite context windows, remain poorly understood.
-Existing benchmarks often focus on problems within the NP complexity class. We push this boundary by introducing **RegexPSPACE**, a benchmark based on PSPACE-complete problems, which serve as a more rigorous standard for assessing the computational capacity of LLMs by requiring massive search space exploration.
-
-This project aims to empirically identify the limits of LLMs' computational capacity under spatial constraints, analyze common failure patterns, and provide a robust framework for future research into advanced reasoning capabilities.
-
-## ✨ Key Features
-- First PSPACE-Complete Benchmark: The first benchmark to evaluate LLMs on PSPACE-complete regex problems, targeting their spatial complexity and reasoning limits.
-
-- Large-Scale Dataset: Includes the Labeled Regex Dataset (LRD) with over one million instances and the Unlabeled Regex Minimization Test set (URMT) for evaluating generalization on longer, unseen regexes.
-
-- Quantitative Evaluation Metrics: Provides well-defined metrics beyond simple accuracy, including Minimality, Equivalence, and Length Ratio, for a nuanced analysis of model performance.
-
-- Analysis of Failure Patterns: Identifies and analyzes common failure patterns in state-of-the-art LLMs, such as verbosity, repetition, and premature termination.
 
 ## 🛠️ Setup
 ### Requirements
