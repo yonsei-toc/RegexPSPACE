@@ -14,6 +14,7 @@
 
 <div align="center">
     <a href="https://arxiv.org/abs/2510.09227"><b>Paper Link</b>📖</a>
+    <a href="https://huggingface.co/datasets/HDJin/RegexPSPACE"><b>Hugging Face Link</b>🤗</a>
 </div><br>
 
 ![Main Image](./figures/main.png)
@@ -38,8 +39,9 @@ This research presents the first empirical investigation into the spatial comput
 - Analysis of Failure Patterns: Identifies and analyzes common failure patterns in state-of-the-art LLMs, such as verbosity, repetition, and premature termination.
 
 ## 📰 News
-* 📣 NEW! We have released **RegexPSPACE** on our official GitHub repository. (Oct 12, 2025)
+* 📣 NEW! We have released our **RegexPSPACE** benchmark on Hugging Face. (Oct 14, 2025)
 * 📣 NEW! We have released our **RegexPSPACE** preprint on arXiv. (Oct 13, 2025)
+* 📣 NEW! We have released **RegexPSPACE** on our official GitHub repository. (Oct 12, 2025)
 
 ## ⚡ Quickstart
 Get started in minutes by following these steps. This guide will walk you through setting up the environment, running inference on the RegexMin task, and evaluating the results.
