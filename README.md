@@ -48,7 +48,7 @@ Get started in minutes by following these steps. This guide will walk you throug
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/RegexPSPACE.git
+git clone https://github.com/hyundong98/RegexPSPACE.git
 cd RegexPSPACE
 ```
 
