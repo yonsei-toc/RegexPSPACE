@@ -1,4 +1,4 @@
-# RegexPSPACE: A Benchmark for Evaluating LLM Reasoning on PSPACE-Complete Regex Problems
+# RegexPSPACE: Evaluating Large Language and Reasoning Models via Regex Minimization and Equivalence
 
 <p align="center">
   <a href="https://github.com/hyundong98/RegexPSPACE/stargazers">
